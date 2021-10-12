@@ -15,7 +15,7 @@ newTweet = async () => {
   twitterClient.post(
     'statuses/update',
     {
-      status: 'I am a ' + randomWords() + ' cat',
+      status: randomWords() + 'cat',
     },
     function (error, tweet, response) {
       if (!error) {
